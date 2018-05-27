@@ -8,11 +8,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Fitness Club Alfenas - Galeria</title>
+	<title>Fitness Club Alfenas - Sobre</title>
 	<!-- custom-theme -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Galeria Academia Fitness Club, Fitness Alfenas, Alfenas Academia,Jump Alfenas, 
+	<meta name="keywords" content="Academia, Fitness Alfenas, Alfenas Academia,Jump Alfenas, 
 	Step Alfenas, Ginastica Localizada Alfenas, Terinamento Funcional Alfenas, Musulação Alfenas, Danca FitDance Alfenas, Acessoria para corrida de rua Alfenas" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
@@ -25,7 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</script>
 	<!-- //custom-theme -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link rel="stylesheet" href="css/lightbox.css"><!-- For-gallery-CSS -->
+
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Owl-carousel-CSS -->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -35,6 +35,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700,800" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+<!-- Testimonials-slider-css-files -->
+<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
+<link href="css/owl.theme.css" rel="stylesheet">
+<!-- //Testimonials-slider-css-files -->
+
+
+
+
+
 </head>
 
 <body>
@@ -51,18 +60,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<span class="icon-bar"></span>
 					</button>
 					<h1><a class="navbar-brand" href="index.html"><img src="images/logo_tranparent.png" width='250px'/></a></h1>
-
-				</div>
+								</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-2" id="link-effect-2">
-						<ul class="nav navbar-nav">
-								<li><a href="index.html" class="effect-3">Home</a></li>					
-								<li class="active"><a href="gallery.html" class="effect-3">Galeria</a></li>	
-								<li><a href="about.html" class="effect-3">Sobre</a></li>						
-								<li><a href="#contato" class="effect-3">Contato</a></li>
-								<li><a href="location.html" class="effect-3">Localização</a></li>
-						</ul>
+							<ul class="nav navbar-nav">
+									<li><a href="index.html" class="effect-3">Home</a></li>					
+									<li><a href="gallery.html" class="effect-3">Galeria</a></li>	
+									<li><a href="about.html" class="effect-3">Sobre</a></li>						
+									<li><a href="#contato" class="effect-3">Contato</a></li>
+									<li class="active"><a href="location.html" class="effect-3">Localização</a></li>
+							</ul>
 					</nav>
 				</div>
 			</nav>
@@ -71,20 +79,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 	<!-- //banner -->
-	<!--gallery-->
-	<div class="gallery">	
-		<div class="container">	
-		<div class="wthree_head_section">
-				<h3 class="w3l_header">Nossas <span>fotos</span></h3>
-			</div>
-			<div class="gallery-info" id="gallery">
-				
-				<div class="clearfix"> </div>	
-			</div>
-			<script src="js/lightbox-plus-jquery.min.js"></script>
-		</div>
-</div>
-<!--//gallery-->
+	<!-- about inner -->
+	<div class="row" style="margin-top:30px;margin-bottom: 30px;">
+		<div class="col-md-6 col-md-offset-2">
+				<div id="map" style="width:800px;height:600px;" >
+
+					</div>
+		</div>		
+	</div>
+
+	<!-- //Team -->
 	<!-- footer -->
 	<div class="footer">
 			<div class="f-bg-w3l">
@@ -127,10 +131,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //js -->
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 <!-- for testimonials slider-js-script-->
+
+
+
+<!-- for testimonials slider-js-file-->
+<script src="js/owl.carousel.js"></script>
+<!-- //for testimonials slider-js-file-->
+	<script>
+	$(document).ready(function() { 
+	$("#owl-demo").owlCarousel({
+
+		autoPlay: 3000, //Set AutoPlay to 3 seconds
+		autoPlay:true,
+		items : 3,
+		itemsDesktop : [640,5],
+		itemsDesktopSmall : [414,4]
+	});
+	}); 
+</script>
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- for testimonials slider-js-script-->
+<!-- stats -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
 <script>
+	$('.counter').countUp();
+
 	var token = '6003194362.2b88639.2def244e0b3d4acfad71f3dd9c344565', // learn how to obtain it below
     userid = 6003194362, // User ID - get it in source HTML of your Instagram profile or look at the next example :)
-    num_photos = 30; // how much photos do you want to get
+    num_photos = 8; // how much photos do you want to get
  
 $.ajax({
 	url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
@@ -139,14 +168,9 @@ $.ajax({
 	data: {access_token: token, count: num_photos},
 	success: function(data){
  		console.log(data);
-		var i = 0;
-		for( x in data.data ){			
-			$('#gallery').append('<div class="col-md-4 gallery-grids"><a href="'+data.data[x].images.standard_resolution.url+'" class="gallery-box" data-lightbox="example-set" data-title=""><img src="'+data.data[x].images.low_resolution.url+'" alt="" class="img-responsive zoom-img"></a></div>');
-			if(i < 8)
-			{
+		for( x in data.data ){
 				$('#recent_works').append('<li><a href="#"><img src="'+data.data[x].images.low_resolution.url+'" alt="" class="img-responsive" style="width:145px !important; height:145px !important;"/></a></li>');
 			}
-			i++;
 		}
 	},
 	error: function(data){
@@ -154,6 +178,26 @@ $.ajax({
 	}
 });
 </script>
+
+<script>
+		function initMap() {
+		  var uluru = {lat: -21.418378, lng: -45.959833};
+		  var map = new google.maps.Map(document.getElementById('map'), {
+			zoom:15,
+			center: uluru
+		  });
+		  var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+		  });
+		}
+	  </script>
+	  <script async defer
+	  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXAB0UcjSO_-BdIoelWiVSQ9rfGJ1eZfw&callback=initMap">
+	  </script>
+
+<!-- //stats -->
+
 </body>
 
 </html>
