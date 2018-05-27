@@ -8,13 +8,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Fitness Club Alfenas - Sobre</title>
+	<title>Sobre</title>
 	<!-- custom-theme -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Gym Trainer Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="description" content="Temos: Jump, Step, Ginastica Localizada, Musculação, Acessoria de corrida de rua, Treinamento Funcional e Dança FitDance, 
+academia situada na cidade Alfenas-MG que visa proporcionar atividade física de qualidade, 
+tendo em vista que temos profissionais qualificados para lhe prestar o melhor atendimento, 
+seja qual for seus objetivos podemos lhe dar suporte."/>
 	<script type="application/x-javascript">
+	
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
 		}, false);
@@ -39,11 +44,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all">
 <link href="css/owl.theme.css" rel="stylesheet">
 <!-- //Testimonials-slider-css-files -->
-
-
-
-
-
 </head>
 
 <body>
@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html"><img src="images/logo_tranparent.png" width='250px'/></a></h1>
+					<h1><a class="navbar-brand" href="index.html"> <img src="images/logo_tranparent.png" class="img-logo" alt="Logo Fitness Club"/></a></h1>
 								</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -147,7 +147,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 w3layouts_footer_grid" id="contato">
 						<h2>Contato</h2>
 							<ul class="con_inner_text">
-								<li><a href="location.html"><span class="fa fa-map-marker" aria-hidden="true"></span>Rua José Roberto Ferreira, 210, Morada do Sol <label> Alfenas-MG.</label></a></li>
+								<li><a href="location.html"><span class="fa fa-map-marker" aria-hidden="true"></span>Rua José Roberto Ferreira, 210, Morada do Sol, Alfenas-MG.</a></li>
 								<li><span class="fa fa-envelope-o" aria-hidden="true"></span> <a href="mailto:gustavominas12@hotmail.com">gustavominas12@hotmail.com</a></li>
 								<li><span class="fa fa-phone" aria-hidden="true"></span> (035)98814-9804 ou (035) 98845-1935</li>
 							</ul>
@@ -207,9 +207,8 @@ $.ajax({
 	data: {access_token: token, count: num_photos},
 	success: function(data){
  		console.log(data);
-		for( x in data.data ){			
-		
-				$('#recent_works').append('<li><a href="#"><img src="'+data.data[x].images.low_resolution.url+'" alt="" class="img-responsive" style="width:145px !important; height:145px !important;"/></a></li>');
+		for( x in data.data ){
+			$('#recent_works').append('<li><a href="#"><img src="'+data.data[x].images.low_resolution.url+'" alt="'+data.data[x].caption.text+'" class="img-responsive img-footer"/></a></li>');
 		}
 	},
 	error: function(data){

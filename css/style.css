@@ -4337,4 +4337,31 @@ h3.heading-agileinfo.white-w3ls {
     margin-top: 2em;
 }
 }
+
+.image-footer
+{
+    width: 145px;
+    height: 145px;
+}
+
+.video-gallery
+{
+    width:370px;
+    height: 320px;
+}
+
+.margin-bottom-55
+{
+    margin-bottom: 55px;
+}
+
+.img-logo
+{
+    width:250px;
+}
+
+.height-320
+{
+    height: 320px;
+}
 /*--//responsive--*/
