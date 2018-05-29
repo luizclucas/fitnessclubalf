@@ -206,9 +206,13 @@ $.ajax({
 	type: 'GET',
 	data: {access_token: token, count: num_photos},
 	success: function(data){
- 		console.log(data);
 		for( x in data.data ){
-			$('#recent_works').append('<li><a href="#"><img src="'+data.data[x].images.low_resolution.url+'" alt="'+data.data[x].caption.text+'" class="img-responsive img-footer"/></a></li>');
+			var text = "Imagem Fitness Club";
+			if(data.data[x].caption != null)
+			{
+					text = data.data[x].caption.text;
+			}
+			$('#recent_works').append('<li><a href="#"><img src="'+data.data[x].images.low_resolution.url+'" alt="'+text+'" class="img-responsive img-footer"/></a></li>');
 		}
 	},
 	error: function(data){

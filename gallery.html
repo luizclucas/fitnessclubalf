@@ -144,9 +144,14 @@ $.ajax({
  		console.log(data);
 		var i = 0;
 		for( x in data.data ){	
+			var text = "Imagem Fitness Club";
+			if(data.data[x].caption != null)
+			{
+					text = data.data[x].caption.text;
+			}
 			if(data.data[x].type == "image")
 			{
-				$('#gallery').append('<div class="col-md-4 gallery-grids"><a href="'+data.data[x].images.standard_resolution.url+'" class="gallery-box" data-lightbox="example-set" data-title=""><img src="'+data.data[x].images.low_resolution.url+'" title="'+data.data[x].caption.text+'" alt="'+data.data[x].caption.text+'"  class="img-responsive zoom-img"></a></div>');
+				$('#gallery').append('<div class="col-md-4 gallery-grids"><a href="'+data.data[x].images.standard_resolution.url+'" class="gallery-box" data-lightbox="example-set" data-title=""><img src="'+data.data[x].images.low_resolution.url+'" title="'+text+'" alt="'+text+'"  class="img-responsive zoom-img"></a></div>');
 			}
 			else if (data.data[x].type == "video")
 			{				
@@ -154,7 +159,8 @@ $.ajax({
 			}
 			if(i < 8)
 			{
-				$('#recent_works').append('<li><a href="#"><img src="'+data.data[x].images.low_resolution.url+'" alt="'+data.data[x].caption.text+'" class="img-responsive img-footer"/></a></li>');
+				
+				$('#recent_works').append('<li><a href="#"><img src="'+data.data[x].images.low_resolution.url+'" alt="'+text+'" class="img-responsive img-footer"/></a></li>');
 			}
 			i++;
 		}
